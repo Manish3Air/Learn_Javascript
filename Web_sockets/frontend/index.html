@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AI Assistant</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+
+            <div>
+                <h1>AI Assistant</h1>
+
+                <button id="newChatBtn">
+                    + New Chat
+                </button>
+            </div>
+
+            <div class="sidebar-footer">
+                Powered by Groq + WebSockets
+            </div>
+
+        </aside>
+
+        <main class="main">
+
+            <div class="topbar">
+                <h2>Chat</h2>
+                <div class="status" id="status">
+                    Connecting...
+                </div>
+            </div>
+
+            <div class="chat-container" id="chatContainer">
+
+                <div class="welcome">
+                    <h1>How can I help you today?</h1>
+                </div>
+
+            </div>
+
+            <div class="input-container">
+
+                <div class="input-box">
+
+                    <textarea
+                        id="input"
+                        placeholder="Message AI Assistant..."
+                        rows="1"
+                    ></textarea>
+
+                    <button id="sendBtn">
+                        Send
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
